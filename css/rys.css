@@ -1,0 +1,755 @@
+/*
+ruedasysuspensiones.com
+Copyright (c) 2015 Ruedas y Suspensiones de Venezuela, C.A.
+
+Developed by Luis E. Arriojas for Ruedas y Suspensiones de Venezuela, C.A.
+***************** LinkedIn *****************
+* https://www.linkedin.com/in/luisarriojas *
+********************************************
+*/
+/*
+verde claro: #a6ce39
+verde oscuro: #6ebe45
+-------------------
+gris plomo: #373737
+gris oscuro: #4f5052
+gris intermedio: #888a8c
+gris claro: #b6b8ba
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html, body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.break {
+    clear: both;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.header .row1 {
+    position: relative;
+    height: 52px;
+    background: rgb(166, 206, 57); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(166, 206, 57, 1) 0%, rgba(110, 190, 69, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(166, 206, 57, 1)), color-stop(100%, rgba(110, 190, 69, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(166, 206, 57, 1) 0%, rgba(110, 190, 69, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(166, 206, 57, 1) 0%, rgba(110, 190, 69, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(166, 206, 57, 1) 0%, rgba(110, 190, 69, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(166, 206, 57, 1) 0%, rgba(110, 190, 69, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ce39', endColorstr='#6ebe45', GradientType=0); /* IE6-9 */
+}
+
+.header .row1 .location {
+    display: inline-block;
+    float: left;
+    color: #343435;
+    font-size: 15px;
+    margin: 16px 0 0 0;
+    text-decoration: none;
+}
+
+.header .row1 .location i {
+    color: white;
+}
+
+.header .row1 .phone {
+    display: inline-block;
+    float: right;
+    color: #343435;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.header .row1 .phone i {
+    color: white;
+}
+
+.header .row1 .phone a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #343435;
+    font-weight: 700;
+    text-decoration: none;
+    color: #343435;
+}
+
+.header .row1 .phone a:hover {
+    color:white;
+    background: #343435; /* Old browsers */
+    background: -moz-linear-gradient(top, #343435 0%, #4f5052 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #343435), color-stop(99%, #4f5052)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #343435 0%, #4f5052 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #343435 0%, #4f5052 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #343435 0%, #4f5052 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #343435 0%, #4f5052 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343435', endColorstr='#4f5052', GradientType=0); /* IE6-9 */
+}
+
+.header .row2 {
+    position: relative;
+    height: auto;
+}
+
+.header .row2 .logo {
+    display: inline-block;
+    float: left;
+    width: 324px;
+    height: 70px;
+    background-image: url(../img/index/logo.png);
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+.header .row2 .menuHor {
+    position: absolute;
+    right:0;
+    width: auto;
+    height: auto;
+    border:1px solid #888a8c;
+    border-radius: 5px;
+    margin-top: 13px;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+    background: #4f5052; /* Old browsers */
+    background: -moz-linear-gradient(top, #4f5052 0%, #b6b8ba 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f5052), color-stop(100%, #b6b8ba)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4f5052 0%, #b6b8ba 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4f5052 0%, #b6b8ba 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4f5052 0%, #b6b8ba 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #4f5052 0%, #b6b8ba 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f5052', endColorstr='#b6b8ba', GradientType=0); /* IE6-9 */
+}
+
+.header .row2 .menuHor .option {
+    float: right;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-left: 1px solid #888a8c;
+}
+
+.header .row2 .menuHor .option:nth-child(2) {
+    border-left: 0;
+}
+
+.footer {
+    height: auto;
+    padding:40px 0 40px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ebe45+0,a6ce39+100 */
+    background: #6ebe45; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #6ebe45 0%, #a6ce39 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #6ebe45), color-stop(100%, #a6ce39)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #6ebe45 0%, #a6ce39 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #6ebe45 0%, #a6ce39 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #6ebe45 0%, #a6ce39 100%); /* IE10+ */
+    background: linear-gradient(135deg, #6ebe45 0%, #a6ce39 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6ebe45', endColorstr='#a6ce39', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.footer .col{
+    float:left;
+    width: 333px;
+    margin:0;
+}
+
+.footer .col:nth-child(2){
+    margin: 0 50px 0 50px;
+}
+
+.footer h2{
+    margin:0 0 20px 0;
+    color:white;
+}
+
+.footer ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.footer li{
+    margin:0 0 10px 0;
+}
+
+.footer a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer a.social{
+    display: inline-block;
+    float:left;
+    width:80px;
+    height:80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 30px 30px 0;
+}
+
+.footer a.facebook{
+    background-image: url(../img/index/facebook.jpg);
+}
+
+.footer a.twitter{
+    background-image: url(../img/index/twitter.jpg);
+}
+
+.footer a.instagram{
+    background-image: url(../img/index/instagram.jpg);
+}
+
+.footer a.youtube{
+    background-image: url(../img/index/youtube.jpg);
+}
+
+#wowslider-container1 {
+    z-index: 1 !important;
+    margin-top: 52px !important;
+}
+
+.homeServices {
+    position: relative;
+    background-color: #6ebe45;
+    height: 200px;
+}
+
+.homeServices .service {
+    display: inline-block;
+    float: left;
+    width: 275px;
+    height: 130px;
+    text-decoration: none;
+    margin: 0;
+    padding: 70px 0 0 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.homeServices .service.first {
+    background-image: url(../img/home/servicio-suspension.jpg);
+}
+
+.homeServices .service.second {
+    background-image: url(../img/home/servicio-frenos.jpg);
+}
+
+.homeServices .service.third {
+    background-image: url(../img/home/servicio-alineacion.jpg);
+}
+
+.homeServices .service.fourth {
+    background-image: url(../img/home/servicio-autos.jpg);
+}
+
+.homeWelcome {
+    position: relative;
+    height: auto;
+    padding: 40px 0 40px 0;
+    background-image: url(../img/home/welcomeBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.homeWelcome .promo{
+    margin:20px 0 40px 0;
+    float:left;
+}
+
+.homeWelcome .image {
+    float: left;
+    width: 300px;
+    height: 77px;
+    background-image: url(../img/home/welcomeLogo.png);
+    background-repeat: no-repeat;
+    margin: 0 40px 0 0;
+}
+
+.homeWelcome .text {
+    float: left;
+    width: 760px;
+    height: auto;
+}
+
+.homeWelcome h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeWelcome h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeFullServices {
+    position: relative;
+    height: auto;
+    padding: 40px 0 40px 0;
+    background-image: url(../img/home/servicesBackground.png);
+    background-repeat: repeat;
+    color: #343435;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.homeFullServices h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeFullServices h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeFullServices ul {
+    float: left;
+    width: 340px;
+    height: auto;
+    margin: 40px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.homeFullServices ul.middle {
+    margin: 40px 40px 0 40px;
+}
+
+.homeFullServices li {
+    margin: 0 0 10px 0;
+}
+
+.homeFullServices a {
+    color: #343435;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.homeFullServices a:hover {
+    text-decoration: underline;
+}
+
+.homeEvents {
+    position: relative;
+    height: auto;
+    padding: 40px 0 40px 0;
+    color: #343435;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.homeEvents h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeEvents h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.homeEvents .event {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 30px 11px 0 11px;
+    border-radius: 10px;
+    border: 1px solid #b6b8ba;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeEvents .event:hover{
+    opacity:0.75;
+}
+
+.homeEvents .event span {
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+    height: auto;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px 10px;
+}
+
+.homeEvents .event.first {
+    background-image: url(../img/home/event1.jpg);
+}
+
+.homeEvents .event.second {
+    background-image: url(../img/home/event2.jpg);
+}
+
+.homeEvents .event.third {
+    background-image: url(../img/home/event3.jpg);
+}
+
+.homeEvents .event.fourth {
+    background-image: url(../img/home/event4.jpg);
+}
+
+.headerSpace {
+    position: relative;
+    margin-top: 52px;
+    height: 90px;
+    background-color:#373737;
+}
+
+.contactForms{
+    position: relative;
+    height:auto;
+    padding:40px 0 30px 0;background-image: url(../img/promo/grandCherokee/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.contactForms .form{
+    float:left;
+    position: relative;
+    width:490px;
+    height:333px;
+    padding:20px;
+    margin:0 40px 0 0;
+    background-color: #e3e3e3;
+    color: #343435;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contactForms .form:nth-child(2){
+    margin-right:0;
+}
+
+.contactForms .form h3{
+    margin:0 0 20px 0;
+    text-align: center;
+}
+
+.contactForms .form .field{
+    float:left;
+    width:150px;
+    height:auto;
+}
+
+.contactForms .form .field.middle{
+    margin:0 20px 0 20px;
+}
+
+.contactForms .form label{
+    font-weight:700;
+}
+
+.contactForms .form input{
+    width:126px;
+    margin-bottom:10px;
+    font-size: 14px;
+    padding:5px 10px;
+}
+
+.contactForms .form textarea{
+    width:466px;
+    height:80px;
+    padding:5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    line-height: 25px;
+}
+
+.contactForms .form a {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px;
+    left:50%;
+    margin:10px 0 0 -50px;
+    border: 1px solid #343435;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: #343435;
+}
+
+.contactForms .form a:hover {
+    background: #343435; /* Old browsers */
+    background: -moz-linear-gradient(top, #343435 0%, #4f5052 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #343435), color-stop(99%, #4f5052)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #343435 0%, #4f5052 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #343435 0%, #4f5052 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #343435 0%, #4f5052 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #343435 0%, #4f5052 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343435', endColorstr='#4f5052', GradientType=0); /* IE6-9 */
+    color:white;
+}
+
+.info {
+    position: relative;
+    height:auto;
+    padding:40px 0 0 0;
+    background-color: #373737;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.branch{
+    float:left;
+    position: relative;
+    width:300px;
+    height:470px;
+    padding:20px;
+    margin:0 0 40px 0;
+    background-color: white;
+    color: #343435;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.branch:nth-child(3n-1){
+    margin:0 40px 40px 40px;
+}
+
+.branch h4{
+    margin:0;
+    color:#135522;
+    font-size:16px;
+}
+
+.branch h5{
+    font-size:14px;
+    margin:10px 0 0 0;
+}
+
+.branch p{
+    margin:0;
+    font-size:14px;
+    line-height: 24px;
+}
+
+.branch a{
+    color:#135522;
+    text-decoration: none;
+}
+
+.branch a:hover{
+    text-decoration: underline;
+}
+
+.branch a:after {
+    content:"\a";
+    white-space: pre;
+}
+
+.payments {
+    position: relative;
+    height:auto;
+    padding:40px 0 0 0;
+    background-image: url(../img/promo/grandCherokee/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.payment{
+    float:left;
+    position: relative;
+    width:300px;
+    height:880px;
+    padding:20px 20px 40px 20px;
+    margin:0 0 40px 0;
+    background-color: white;
+    color: #343435;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.payment:nth-child(3n-1){
+    margin:0 40px 40px 40px;
+}
+
+.payment h4{
+    margin:0;
+    color:#135522;
+    font-size:16px;
+}
+
+.payment h5{
+    font-size:14px;
+    margin:10px 0 0 0;
+}
+
+.payment p{
+    margin:0;
+    font-size:14px;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+.promos{
+    position: relative;
+    height:auto;
+    padding:40px 0 0 0;
+    background-image: url(../img/promo/grandCherokee/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.promos .form{
+    float:left;
+    position: relative;
+    left:50%;
+    width:490px;
+    height:auto;
+    padding:20px;
+    margin:0 0 40px -265px;
+    background-color: #e3e3e3;
+    color: #343435;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.promos .form:nth-child(2){
+    margin-right:0;
+}
+
+.promos .form h3{
+    margin:0 0 20px 0;
+    text-align: center;
+}
+
+.promos .form .field{
+    float:left;
+    width:150px;
+    height:auto;
+}
+
+.promos .form .field.middle{
+    margin:0 20px 0 20px;
+}
+
+.promos .form label{
+    font-weight:700;
+}
+
+.promos .form input{
+    width:126px;
+    margin-bottom:10px;
+    font-size: 14px;
+    padding:5px 10px;
+}
+
+.promos .form .field.large input{
+    width:466px;
+    margin-bottom:10px;
+    font-size: 14px;
+    padding:5px 10px;
+}
+
+.promos .form select{
+    width:148px;
+    height:30px;
+    margin-bottom:10px;
+    font-size: 14px;
+    padding:3px 7px;
+}
+
+.promos .form a {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px;
+    left:50%;
+    margin:10px 0 0 -50px;
+    border: 1px solid #343435;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: #343435;
+}
+
+.promos .form a:hover {
+    background: #343435; /* Old browsers */
+    background: -moz-linear-gradient(top, #343435 0%, #4f5052 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #343435), color-stop(99%, #4f5052)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #343435 0%, #4f5052 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #343435 0%, #4f5052 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #343435 0%, #4f5052 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #343435 0%, #4f5052 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343435', endColorstr='#4f5052', GradientType=0); /* IE6-9 */
+    color:white;
+}
+
+.promos .form .result{
+    width:450px;
+    height:auto;
+    padding:10px 20px;
+    color:white;
+    font-weight: 700;
+}
+
+.promos .form .result.success{
+    background-color: green;
+}
+
+.promos .form .result.error{
+    background-color: red;
+}
+
+.promos .form .result.data{
+    background-color: rgb(215, 129, 0);
+}
+
+.success a.map{
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px;
+    left:auto;
+    float:right;
+    margin:10px 0 0 0;
+    border: 1px solid white;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.success a.map:hover{
+    background: white;
+    filter: none;
+    color:green;
+}

@@ -1,0 +1,130 @@
+<!--
+ruedasysuspensiones.com
+Copyright (c) 2015 Ruedas y Suspensiones de Venezuela, C.A.
+
+Developed by Luis E. Arriojas for Ruedas y Suspensiones de Venezuela, C.A.
+***************** LinkedIn *****************
+* https://www.linkedin.com/in/luisarriojas *
+********************************************
+-->
+
+<!doctype html>
+<html ng-app="rysApp" ng-controller="rysCtrl">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{rysMeta.description}}">
+    <title ng-bind-template="{{rysMeta.title}} - Ruedas y Suspensiones"></title>
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <!--CSS-->
+    <link href="css/rys.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="wowSlider/engine1/style.css" rel="stylesheet" type="text/css"/>
+
+    <!--JS-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-app.js"></script>
+    <script src="js/angular-ctrl.js"></script>
+
+    <!--Christmas-->
+    <!--<script src="js/snowstorm-min.js"></script>
+    <script>
+        snowStorm.snowColor = '#ffffff';   // blue-ish snow!?
+        snowStorm.flakesMaxActive = 100;    // show more snow on screen at once
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+        snowStorm.flakesMax = 128;
+        snowStorm.freezeOnBlur = true;
+        snowStorm.snowStick = true;
+    </script>
+    <script src="js/christmas.js"></script>-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="row1">
+            <div class="container">
+                <a href="#!contactenos" class="location">
+                    <i class="fa fa-map-marker"></i> Ubicaciones
+                </a>
+
+                <span class="phone">
+                    <i class="fa fa-phone"></i> ¿Necesita ayuda? ¡Llámenos! <a href="tel:+582418256024">(0241)825-6024</a>
+                </span>
+
+                <div class="break"></div>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="container">
+                <a href="#!home" class="logo"></a>
+
+                <div class="menuHor">
+                    <!--<a href="" class="option"><i class="fa fa-search"></i></a>-->
+                    <a href="#!contactenos" class="option"><i class="fa fa-phone"></i> CONTACTENOS</a>
+                    <!--<a href="#!blog/noticias" class="option"><i class="fa fa-rss"></i> BLOG</a>-->
+                    <a href="#!formasDePago" class="option"><i class="fa fa-credit-card"></i> FORMAS DE PAGO</a>
+                    <!--<a href="#!marcas" class="option"><i class="fa fa-wrench"></i> MARCAS</a>-->
+                    <!--<a href="#!servicios" class="option"><i class="fa fa-car"></i> SERVICIOS</a>-->
+
+                    <div class="break"></div>
+                </div>
+
+                <div class="break"></div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view autoscroll="true"></div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="col">
+                <h2><a href="#">Home</a></h2>
+
+                <ul>
+                    <!--<li><a href="#!quienesSomos">Quienes Somos</a></li>-->
+                    <li><a href="#!contactenos">Contáctenos</a></li>
+                    <li><a href="#!formasDePago">Formas de Pago</a></li>
+                    <!--<li><a href="#!marcas">Marcas</a></li>-->
+                    <!--<li><a href="#!blog/noticias">Blog</a></li>-->
+                </ul>
+            </div>
+            <!--<div class="col">
+                <h2><a href="#!servicios">Servicios</a></h2>
+
+                <ul>
+                    <li><a href="#!servicios/suspensionOffroad">Suspensión Offroad</a></li>
+                    <li><a href="#!servicios/suspensionPerformance">Suspensión Performance</a></li>
+                    <li><a href="#!servicios/suspensionReemplazoOriginal">Suspensión Reemplazo Original</a></li>
+                    <li><a href="#!servicios/frenos">Frenos</a></li>
+                    <li><a href="#!servicios/alineacion">Alineación</a></li>
+                    <li><a href="#!servicios/balanceoCauchos">Balanceo de cauchos</a></li>
+                    <li><a href="#!servicios/electromecanica">Electromecánica</a></li>
+                    <li><a href="#!servicios/aireAcondicionado">Aire Acondicionado</a></li>
+                    <li><a href="#!servicios/seguridadGPS">Seguridad (GPS y Alarma)</a></li>
+                    <li><a href="#!servicios/lubricantesAceites">Lubricantes y Aceites</a></li>
+                </ul>
+            </div>-->
+            <div class="col">
+                <h2>Síguenos</h2>
+
+                <ul>
+                    <li><a href="http://facebook.com" class="social facebook"></a></li>
+                    <li><a href="http://twitter.com" class="social twitter"></a></li>
+                    <li><a href="http://instagram.com" class="social instagram"></a></li>
+                    <li><a href="http://youtube.com" class="social youtube"></a></li>
+                </ul>
+
+                <div class="break"></div>
+            </div>
+
+            <div class="break"></div>
+        </div>
+    </div>
+</body>
+</html>
